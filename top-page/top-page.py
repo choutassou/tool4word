@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-docx-formatter.py - DOCXファイルのヘッダー、フッター、表紙をテンプレートに従って変更するツール
+top-page.py - DOCXファイルのヘッダー、フッター、表紙をテンプレートに従って変更するツール
 
 使用例:
-    python docx-formatter.py "sample/21GXP-D-001 ソフトウェア要求仕様書.docx" --DocCode D-001 --DocName ソフトウェア要求仕様書 --Version 1.0
+    python top-page.py "sample/21GXP-D-001 ソフトウェア要求仕様書.docx" --DocCode D-001 --DocName ソフトウェア要求仕様書 --Version 1.0
 """
 
 import argparse
@@ -394,7 +394,7 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog='''
 使用例:
-    python docx-formatter.py "sample/21GXP-D-001 ソフトウェア要求仕様書.docx" --DocCode D-001 --DocName ソフトウェア要求仕様書 --Version 1.0
+    python top-page.py "sample/21GXP-D-001 ソフトウェア要求仕様書.docx" --DocCode D-001 --DocName ソフトウェア要求仕様書 --Version 1.0
         '''
     )
 
